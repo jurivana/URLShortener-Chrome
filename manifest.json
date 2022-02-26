@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "ShortURL",
   "version": "1.0",
   "description": "URL Shortener",
@@ -9,9 +9,10 @@
     "48": "icons/icon_48.png",
     "128": "icons/icon_128.png"
   },
-  "browser_action": {
+  "action": {
     "default_title": "ShortURL",
     "default_popup": "popup.html"
   },
-  "permissions": ["tabs", "http://*/", "https://*/"]
+  "permissions": ["tabs"],
+  "host_permissions": ["*://*/*"]
 }
