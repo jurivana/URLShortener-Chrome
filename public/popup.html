@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ShortURL</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <form class="form" id="form">
+        <label for="path">Pfad</label>
+        <div class="input-wrapper">
+          <span class="input-outline"></span>
+          <input type="text" id="path" placeholder="(optional)" autofocus />
+        </div>
+        <button type="submit" class="submit" id="submit-button">Kürzen</button>
+      </form>
+      <span class="result hidden" id="result">!</span>
+    </div>
+
+    <script src="popup.js"></script>
+
+    <!--
+    This HTML file opens when you click on icon from the toolbar.
+
+    To begin the development, run `npm run watch`.
+    To create a production bundle, use `npm run build`.
+  --></body>
+</html>
